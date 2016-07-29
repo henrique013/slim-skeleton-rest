@@ -1,5 +1,5 @@
 {
-    "name": "slim/slim-skeleton",
+    "name": "slim-skeleton/rest",
     "description": "A Slim Framework skeleton application for rapid development",
     "keywords": ["microframework","rest","slim", "psr7"],
     "license": "MIT",
