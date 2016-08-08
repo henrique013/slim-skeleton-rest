@@ -8,13 +8,15 @@
 
 namespace App\Util;
 
+use Slim\Container;
+
 
 abstract class Handle
 {
     protected $ci;
 
 
-    public function __construct(\Slim\Container $ci)
+    public function __construct(Container $ci)
     {
         $this->ci = $ci;
     }
