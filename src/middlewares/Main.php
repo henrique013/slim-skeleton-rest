@@ -8,13 +8,17 @@
 
 namespace App\Middleware;
 
+use App\Util\Handle;
 use App\Util\Handle\Middleware;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
 
-class Main extends Middleware
+class Main extends Handle
 {
+    use Middleware;
+
+
     public function __invoke(Request $request, Response $response, callable $next)
     {
         $response = $response->withHeader('X-Timestamp', time());

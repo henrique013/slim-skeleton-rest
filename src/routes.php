@@ -2,4 +2,4 @@
 // Routes
 
 
-$app->get('[/]', \App\Route\Index::class);
+$app->get('[/]', 'App\Route\Index:get');

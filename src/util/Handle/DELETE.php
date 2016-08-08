@@ -2,23 +2,22 @@
 /**
  * Created by PhpStorm.
  * User: Henrique
- * Date: 28/07/2016
- * Time: 16:05
+ * Date: 08/08/2016
+ * Time: 16:26
  */
 
 namespace App\Util\Handle;
 
-use App\Util\Handle;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
 
-abstract class Route extends Handle
+trait DELETE
 {
     /**
      * @param \Slim\Http\Request $request
      * @param \Slim\Http\Response $response
      * @return \Slim\Http\Response
      */
-    abstract public function __invoke(Request $request, Response $response);
+    abstract function delete(Request $request, Response $response);
 }
