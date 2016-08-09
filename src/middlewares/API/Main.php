@@ -6,7 +6,7 @@
  * Time: 14:19
  */
 
-namespace App\Middleware;
+namespace App\Middleware\API;
 
 use App\Util\Handle;
 use App\Util\Handle\Middleware;

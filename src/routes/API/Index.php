@@ -6,7 +6,7 @@
  * Time: 14:01
  */
 
-namespace App\Route;
+namespace App\Route\API;
 
 use App\Util\Handle;
 use App\Util\Handle\GET;
