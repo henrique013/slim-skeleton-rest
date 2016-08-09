@@ -2,4 +2,4 @@
 // Routes
 
 
-$app->get('[/]', 'App\Route\API\Index:get');
+$app->get('[/]', 'App\Route\Index:get');

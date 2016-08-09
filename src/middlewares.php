@@ -2,4 +2,4 @@
 // Application middlewares
 
 
-$app->add(\App\Middleware\API\Main::class);
+$app->add(App\Middleware\Main::class);
