@@ -31,7 +31,7 @@ class Main extends Handle
         $response = $next($request, $response);
 
 
-        if (!$response->getBody()->getSize())
+        if (!$response->getBody()->getSize() && $response->isOk())
         {
             $response = $response->withStatus(204);
         }
