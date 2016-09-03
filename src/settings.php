@@ -3,7 +3,7 @@ return [
     'settings' => [
 
         // Slim settings
-        'displayErrorDetails' => getenv("MY_ENV") === 'development' ? true : false,
+        'displayErrorDetails' => getenv("MY_ENV") !== 'production' ? true : false,
 
         // Database settings
         'PDO' => [
