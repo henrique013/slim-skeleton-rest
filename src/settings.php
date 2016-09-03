@@ -1,15 +1,16 @@
 <?php
 return [
     'settings' => [
-        'displayErrorDetails' => getenv("ENV") === 'development' ? true : false,
-        'addContentLengthHeader' => false, // Allow the web server to send the content-length header
+
+        // Slim settings
+        'displayErrorDetails' => getenv("MY_ENV") === 'development' ? true : false,
 
         // Database settings
         'PDO' => [
-            'host' => getenv("DB_HOST"),
-            'user' => getenv("DB_USER"),
-            'password' => getenv("DB_PASS"),
-            'dbname' => getenv("DB_NAME"),
+            'host' => getenv("MY_DB_HOST"),
+            'user' => getenv("MY_DB_USER"),
+            'password' => getenv("MY_DB_PASS"),
+            'dbname' => getenv("MY_DB_NAME"),
         ],
     ],
 ];
