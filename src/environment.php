@@ -4,4 +4,4 @@
 
 $dotenv = new \Dotenv\Dotenv(dirname(__DIR__));
 $dotenv->overload();
-$dotenv->required('ENV')->allowedValues(['development', 'production']);
+$dotenv->required('MY_ENV')->allowedValues(['development', 'production']);

@@ -1,25 +1,35 @@
 {
-    "name": "slim-skeleton/rest",
-    "description": "A Slim Framework skeleton application for rapid development",
-    "keywords": ["microframework","rest","slim", "psr7"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Henrique Alves",
-            "email": "henrique013.a@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.5.0",
-        "slim/slim": "^3.1",
-        "filp/whoops": "^2.1",
-        "vlucas/phpdotenv": "^2.3"
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\Middleware\\": "src/middlewares",
-            "App\\Route\\": "src/routes",
-            "App\\Util\\": "src/util"
-        }
+  "name": "slim-skeleton/rest",
+  "description": "A Slim Framework skeleton application for rapid development",
+  "keywords": [
+    "microframework",
+    "rest",
+    "slim",
+    "psr7"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Henrique Alves",
+      "email": "henrique013.a@gmail.com"
     }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "slim/slim": "^3.1",
+    "filp/whoops": "^2.1",
+    "vlucas/phpdotenv": "^2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\Middleware\\": "src/middlewares",
+      "App\\Route\\": "src/routes",
+      "App\\Util\\": "src/util"
+    }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "php -r \"copy('.env.example', '.env')\""
+    ]
+  }
 }

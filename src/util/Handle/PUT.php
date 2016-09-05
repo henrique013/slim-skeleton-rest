@@ -14,10 +14,5 @@ use Slim\Http\Response;
 
 trait PUT
 {
-    /**
-     * @param \Slim\Http\Request $request
-     * @param \Slim\Http\Response $response
-     * @return \Slim\Http\Response
-     */
-    abstract function put(Request $request, Response $response);
+    public abstract function put(Request $request, Response $response);
 }
