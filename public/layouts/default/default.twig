@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="/layouts/default/default.css">
+
+    {% block head %}{% endblock %}
+
+</head>
+<body>
+
+<section class="content">
+    {% block content %}{% endblock %}
+</section>
+
+{% block footer %}{% endblock %}
+
+</body>
+</html>
